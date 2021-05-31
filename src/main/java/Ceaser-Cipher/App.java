@@ -16,8 +16,10 @@ public class App {
 //        int key;
         Console console =System.console();//import console for users input
 
-        System.out.print("Please enter the text to encrypt: ");
-        password = keyboard.nextLine();
+        System.out.print("Please enter the message to encrypt: ");
+        String text = console.readLine();//takes users input
+
+
 
         do {
             System.out.print("Please enter a key to encrpt the text 1 to 25: ");
