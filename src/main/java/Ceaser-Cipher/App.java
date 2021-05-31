@@ -19,9 +19,20 @@ public class App {
         System.out.print("Please enter the message to encrypt: ");
         String text = console.readLine();//takes users input
 
-        System.out.println("Kindly enter the encrypting key you would love to use:");
+
+
+        System.out.println("Kindly enter the encrypting key you would love to use between1-25:");
         String encryptingKey = console.readLine() ;
         Integer integerEncryptingKey = Integer.parseInt(encryptingKey);
+
+        //if statement to handle key errors
+        if (integerEncryptingKey<1&&integerEncryptingKey>25){
+            System.out.println("Please choose a key that ranges between 1 and 25");
+        }
+        else (integerEncryptingKey>=1||integerEncryptingKey<=25){
+            System.out.println("You have entered a correct key formart");
+        }
+
 
 
 
