@@ -30,5 +30,13 @@ public class Cipher {
 
         char shifted = (char) (c - asciiShift);//shift
 
+        //Wrap the letters
+        shifted = (char) ((shifted + cipherShift + alphaLength) % alphaLength);
+
+
+        //shift back to english words
+        return (char) (shifted + asciiShift);
+
+
     }
 }
