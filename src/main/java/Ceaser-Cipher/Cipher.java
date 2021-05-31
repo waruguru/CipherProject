@@ -39,4 +39,21 @@ public class Cipher {
 
 
     }
+    // Here we Rotate a string k-positions
+    public  String cipher() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < mText.length(); i++) {
+            if(mText.charAt(i) == ' ')
+            {
+                sb.append(" ");
+            }
+            else
+            {
+                sb.append(cipher(mText.charAt(i), mShift));
+            }
+
+        }
+        return sb.toString();
+    }
+
 }
