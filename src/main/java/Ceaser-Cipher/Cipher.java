@@ -13,4 +13,13 @@ public class Cipher {
         this.mShift = mShift;
     }
     //getters method
+
+
+    public String getmText() {
+        return mText;
+    }
+
+    public int getmShift() {
+        return mShift;
+    }
 }
