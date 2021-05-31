@@ -18,6 +18,13 @@ public class App {
 
         System.out.print("Please enter the message to encrypt: ");
         String text = console.readLine();//takes users input
+        if (text.getClass()!==String){
+            System.out.println("Please make sure your text is in string formart");
+
+        }
+        else{
+            System.out.println("You have entered the correct format");
+        }
 
 
 
@@ -29,8 +36,11 @@ public class App {
         if (integerEncryptingKey<1&&integerEncryptingKey>25){
             System.out.println("Please choose a key that ranges between 1 and 25");
         }
-        else (integerEncryptingKey>=1||integerEncryptingKey<=25){
+        else if(integerEncryptingKey>=1||integerEncryptingKey<=25) {
             System.out.println("You have entered a correct key formart");
+        }
+        else{
+            System.out.println("Please check the formart of your inputs");
         }
 
 
