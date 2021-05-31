@@ -19,6 +19,13 @@ public class App {
         System.out.print("Please enter the message to encrypt: ");
         String text = console.readLine();//takes users input
 
+        System.out.println("Kindly enter the encrypting key you would love to use:");
+        String encryptingKey = console.readLine() ;
+        Integer integerEncryptingKey = Integer.parseInt(encryptingKey);
+
+
+
+
 
 
         do {
