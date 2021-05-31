@@ -7,4 +7,10 @@ public class Cipher {
     private int mShift;
 
     //A constructor
+
+    public Cipher(String mText, int mShift) {
+        this.mText = mText;
+        this.mShift = mShift;
+    }
+    //getters method
 }
