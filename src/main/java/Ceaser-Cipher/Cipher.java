@@ -22,4 +22,11 @@ public class Cipher {
     public int getmShift() {
         return mShift;
     }
+
+    public static char cipher(char c, int k){
+        final int alphaLength = 26;
+        final char asciiShift = Character.isUpperCase(c) ? 'A' : 'a';
+        final int cipherShift = k % alphaLength;
+
+    }
 }
