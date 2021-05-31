@@ -1,8 +1,8 @@
 # Caesar Cipher
-This is an encryption program that takes in text input from a user and encrypts the inputed text . It only encrypts letters with the user providing the encryption key which must be between numbers 1-26.
+This is an encrypting decrypting program that inputs a text from the user and a key uses the key to encrypt and same key to decrypt.
 
 ## Author
-* Mike Wanya
+* Muriithi Joyce
 
 ## Project Setup Instructions
 Follow the following setup instructions to run the program.
@@ -31,5 +31,5 @@ Follow the following setup instructions to run the program.
 no bugs yet
 
 
-Copyright (c) 2019 [MIT LICENSE](./LICENSE)
+Copyright (c) 2021 [MIT LICENSE](./LICENSE)
 
