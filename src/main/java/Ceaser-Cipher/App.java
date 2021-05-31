@@ -49,6 +49,19 @@ public class App {
         public static String encode(text,integerEncryptingKey){
             integerEncryptingKey = integerEncryptingKey %26+26;
             for (char i: text.toCharArray()){
+                if (Character.isLetter(i)){
+                    if (Character.isUpperCase(i)){
+                        encode.append((char) ('A' + (i - 'A' + integerEncryptingKey) %26));
+                    }
+                    else {
+                        encode.append((char) ('a' + ( i - 'a' + integerEncryptingKey)%26));
+                    }
+                    else {
+                        encode.append(i);
+                    }
+                }
+                return encryptedText.toString;
+            }
         }
 
 
