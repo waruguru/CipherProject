@@ -28,5 +28,7 @@ public class Cipher {
         final char asciiShift = Character.isUpperCase(c) ? 'A' : 'a';
         final int cipherShift = k % alphaLength;
 
+        char shifted = (char) (c - asciiShift);//shift
+
     }
 }
